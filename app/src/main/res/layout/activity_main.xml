@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+
+        android:id="@+id/description_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task Description"
+        android:layout_margin="8dp" />
+
+    <EditText
+        android:id="@+id/due_date_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Due Date (e.g., 2023-09-20)"
+        android:layout_margin="8dp" />
+
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Task"
+        android:layout_margin="8dp" />
+
+    <Button
+        android:id="@+id/undo_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Undo"
+        android:layout_margin="8dp" />
+
+    <Button
+        android:id="@+id/redo_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Redo"
+        android:layout_margin="8dp" />
+
+    <Button
+        android:id="@+id/filter_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show All"
+        android:layout_margin="8dp" />
+
+    <Button
+        android:id="@+id/filter_completed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Completed"
+        android:layout_margin="8dp" />
+
+    <Button
+        android:id="@+id/filter_pending"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Pending"
+        android:layout_margin="8dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="8dp" />
+</LinearLayout>
